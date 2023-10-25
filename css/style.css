@@ -1,0 +1,152 @@
+/* Apply animation to the title element */
+h1 {
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Define the glow animation */
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px #0653fb, 0 0 20px #0653fb, 0 0 30px #fa7f05, 0 0 40px #0653fb, 0 0 50px #0653fb;
+	}
+	to {
+		text-shadow: 0 0 10px #fa7f05, 0 0 20px #fa7f05, 0 0 30px #facd05, 0 0 40px #facd05, 0 0 50px #facd05;
+	}
+}
+
+/* Styles for the body element */
+body {
+	background-image: url('../background.jpg');
+	background-size: cover;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: medium;
+	
+}
+ 
+/* Styles for table cell elements */
+td {	
+	padding: 10px;
+	border: 3px solid #898787;
+	border-radius: 8px;
+}
+
+/* Styles for a table cell when hovered over */
+td:hover {
+	background-color: rgb(84, 93, 99);
+}
+
+/* Styles for a figure element */
+figure {
+	margin: auto;
+	text-align: center;
+	border: 1.1px solid #070707;
+	border-radius: 6px;
+	padding: 5px;
+}
+img:hover {
+	cursor: pointer;
+  }  
+
+/* Styles for an image within a figure element */
+figure img {
+	max-width: auto;
+	max-height: 180px;
+	object-fit: fill;
+	border-radius: 8px;
+	box-shadow: 1px 0 5px 2px rgba(0, 0, 0, 0.8); /* Add a box-shadow */
+}
+.zoomed {
+	transform: translate(35%, 35%) scale(2);
+	transform-origin: 10% 10% 10%;
+	transition: transform 0.5s ease-in-out;
+	cursor: pointer;
+  }
+  
+/* Styles for a caption within a figure element */
+figure figcaption {
+	text-align: center;
+}
+
+/* Styles for table rows with odd child elements */
+tr:nth-child(odd) {
+	background-color: #fdcb03;
+	border-radius: 8px;
+	background-image: linear-gradient(to bottom, #ffcd00, #fe5f03, #0171f9, #7a7b7b);
+}
+
+/* Styles for table rows with even child elements */
+tr:nth-child(even) {
+	background-color: #fe5f03;
+	border-radius: 8px;
+	background-image: linear-gradient(to bottom, #7a7b7b, #0171f9, #fe5f03, #ffcd00);
+}
+
+/* Styles for a fixed element in the bottom left corner */
+#bottom-left {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: transparent;
+	color: #fff;
+	padding: 10px;
+}
+
+/* Styles for a fixed element in the bottom right corner */
+#bottom-right {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: transparent;
+	color: #fff;
+	text-decoration: underline;
+	padding: 10px;
+}
+
+/* Styles for a title element within a fixed bottom-left element */
+#bottom-left h1 {
+	margin: 5;
+	font-size: 45px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 95%;
+	background-color: rgba(51, 51, 51, 0.5); /* Transparent background */
+	padding: 2px 0;
+  }
+
+footer nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+ 
+footer nav ul li {
+	margin: 0 10px;
+  }
+  
+footer nav ul li a {
+	color: white;
+	font-size: 19px;
+	text-decoration: none; /* Remove underline */
+	text-decoration-color: whitesmoke;
+  }
+
+  /* Style the links on hover */
+  footer nav ul li a:hover {
+	color: rgb(0, 255, 51); /* Change the text color */
+	text-decoration-color: #a6ff00; /* Add an underline to the links */
+	font-size: larger; /* Make the text large */
+	text-shadow: #070707;
+  } 
+
+ 
+  
